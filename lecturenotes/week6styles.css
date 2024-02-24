@@ -1,0 +1,12 @@
+h1 {color: blue}
+p {color:blueviolet}
+/* below is a group selector , it selects mpre than one element */
+p, h1 {font-family: Verdana, Geneva, Tahoma, sans-serif;}
+/* Im looking for a tags ( <a href> )inside of p tags ( <P> ) below */
+p a {color: red}
+
+/* format for an id selector*/
+#amazonlink {color: green}
+
+/* format for a class selector */
+.fcolor {color: chocolate}
