@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="veiwport" content="width=device-width, initail-scale=1.0">
+        <title>Unit 10 Notes Responsive Design</title>
+        <style>
+            .large{
+         display: none; 
+         }
+
+    
+         @media (max-width: 800px) {
+         .small {
+            display: block;
+         }
+
+            .large {
+            display: none; 
+         }
+         }
+
+    
+            @media (min-width: 801px) {
+            .small{
+            display: none; /* Hide small message */
+         }
+            .large{
+            display: block; /* Show large message */
+         }
+         }
+        </style>
+    </head>
+    <body>
+
+        <p class="large">Im large</p>
+        <p class="small">Im small</p>
+
+    </body>
+</html>
