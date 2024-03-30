@@ -4,3 +4,6 @@ nav {background-color: #e3e1e2;
         margin-bottom: 30px;}
 nav a {color: #ed4e2b; }
 nav a:hover{background-color: #e695c4}
+@media only screen and (min-width: 600px) {
+        nav a {width: 100%}
+}
