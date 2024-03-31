@@ -7,6 +7,6 @@ nav a:hover{background-color: #e695c4}
 @media only screen and (min-width: 768px) {
         nav a {width: 100%;
                 display: block;
-        padding: 10px;}
-        .separator {display: none;}
+                }
+        .separator {display: none !important;}
 }
