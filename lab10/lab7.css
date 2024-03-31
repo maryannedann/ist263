@@ -8,5 +8,5 @@ nav a:hover{background-color: #e695c4}
         nav a {width: 100%;
                 display: block;
         padding: 10px;}
-        span {display: none;}
+        .separator {display: none;}
 }
