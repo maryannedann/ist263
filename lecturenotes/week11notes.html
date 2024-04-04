@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {cursor: pointer;}
+    </style>
+    <script>
+        function onclickalert() {
+        alert("Hello World!");
+        }
+
+        function another() {
+            alert("Second Message");
+        }
+
+        function loady(){
+            alert("Page Load");
+        }
+    </script>
+</head>
+<body onload="loady();">
+    <h1 onclick="onclickalert();">Welcome to Javascript</h1>
+    <p onmouseover="another();">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi laboriosam eum id nemo atque optio? Aspernatur, quidem vel repudiandae accusantium natus illum, nesciunt quibusdam reiciendis omnis deleniti debitis fugit quisquam?</p>
+</body>
+</html>

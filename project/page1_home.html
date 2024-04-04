@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #FCF6F5;
+            }
+        nav, a {
+            text-decoration: none;
+            text-align: center;
+            padding: 40px;
+            font-size: 30px;
+            }
+        .preview_fb {
+            display: flex;
+            align-items: flex-start;
+            border-left: 2px solid black; 
+            padding: 40px; 
+            margin-left: 40px;
+            }
+
+        .preview_imgs {
+            display: inline-block;
+            padding: 10px;
+            }
+        figcaption {
+            text-align: center;
+        }
+        
+        .spotlight_fb {
+            display: flex;
+            border-left: 2px solid black;
+            padding: 40px;
+            margin-left: 40px;
+            margin-top: 150px;
+            flex-direction: column; 
+            align-items: flex-start;
+        }
+        .spotlight_img {
+            margin-top: 10px;
+            align-items: flex-start;
+        }
+
+        .aboutme_fb {
+            display: flex;
+            flex-direction: column;
+            margin-top: 150px;
+            border: 2px solid black
+        }
+        .aboutme_img {
+            float: right;
+            padding:20px;
+        }
+
+        div, h1 {
+            padding:15px;
+        }
+        .aboutme_paragraph {
+            align-items:flex-start;
+        }
+        .aboutme_header {
+            padding: 10px;
+        }
+        footer {
+            margin-top: 150px;
+            background-color: #990011;
+        }
+        form {
+            padding-left: 25px;
+            padding-bottom: 25px;
+        }
+        header {
+            background-color: #990011;
+            padding: 150px;
+        }
+        .footer_header{
+            color: #FCF6F5; 
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <header>Eventual website logo will go here</header>
+    <nav>
+        <hr>
+        <a href="page1_home.html">HOME</a> 
+        <a href="page2_reviews.html">REVIEWS</a>
+        <a href="page3_top10.html">TOP 10</a>
+        <hr>
+    </nav>
+
+    <div class="preview_fb">
+        <h2>Recent Reviews</h2>
+        <div>
+            <img class="preview_imgs" src="../project/projectimages/lovehaswon.jpg" width="400" height="235">
+            <figcaption>Love Has Won</figcaption>
+        </div>
+
+        <div>
+            <img class="preview_imgs" src="../project/projectimages/sopronos2.jpeg" width="400" height="235">
+            <figcaption>The Sopranos</figcaption>
+        </div>
+
+        <div>
+            <img class="preview_imgs" src="../project/projectimages/uncutgems.jpg" width="400" height="235">
+            <figcaption>Uncut Gems</figcaption>
+        </div>
+
+        <div>
+            <img class="preview_imgs" src="../project/projectimages/whiplash2.jpeg" width="400" height="235">
+            <figcaption>Whiplash</figcaption>
+        </div>
+    </div>
+
+    <div class="spotlight_fb">
+        <h2>Spotlight</h2>
+        <div>
+            <img class="spotlight_img" src="../project/projectimages/survivor.jpeg" width="822" height="550">
+            <figcaption>Survivor</figcaption>
+        </div>
+    </div>
+
+    <div class="aboutme_fb">
+        <div class="aboutme_header">
+            <h1>About Mary</h1>
+        </div>
+        
+        <div>
+            <img class="aboutme_img" src="../project/projectimages/aboutme.jpg">
+        </div>
+
+        <div>
+            <p class="aboutme_paragraph">
+                Mary is from a somewhat smalltown named Lodi, California just outside the capitol Sacramento. After graduating high school, she attended Syracuse University. Growing up every year her family would watch the Oscars like it was the Superbowl. Almost any genre is of interest to her, movies and T.V shows are her life. Originally coming to Syracuse she originally thought she wanted to get her degree in filmmaking, although after exploring and taking a wide variety of courses she discovered her true passion, web development! This is website is a true combination of the things she loves the most HTML and moives/TV shows.
+            </p>
+        </div>
+    </div>
+   
+<footer>
+    <h1 class="footer_header">Reccomend me a movie or tv show to review!</h1>
+    <form>
+        <label for="name">Name</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="email">Email</label><br>
+        <input type="text" id="email" name="email"><br>
+        <label for ="comment">Reccomendation</label><br>
+        <textarea id="comment" name="comment"></textarea><br>
+        <input type="submit" class="submit" value="Submit">
+        </label>
+    </form>
+</footer>
+
+
+</body>
+</html>
