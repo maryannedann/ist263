@@ -1,0 +1,34 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #FCF6F5;
+    }
+nav, a {
+    text-decoration: none;
+    text-align: center;
+    padding: 40px;
+    font-size: 30px;
+    }
+a {
+    color: black;
+    }
+a:hover {
+    color:#ffc830;
+    }
+footer {
+        margin-top: 150px;
+        background-color: #990011;
+    }
+form {
+        padding-left: 25px;
+        padding-bottom: 25px;
+    }
+header {
+        background-color: #990011;
+        padding: 150px;
+    }
+.footer_heading{
+        color: #FCF6F5; 
+    }
+form, label {
+        color: #FCF6F5;
+    }
