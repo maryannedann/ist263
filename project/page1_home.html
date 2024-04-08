@@ -34,6 +34,7 @@
         }
         .spotlight_fb {
             display: flex;
+            justify-content: center;
             padding: 40px;
             margin-left: 40px;
         }
@@ -41,10 +42,16 @@
             margin-top: 10px;
             align-items: flex-start;
         }
+        .spotlight_title {
+            text-align: center;
+            font-size: 30px;
+            margin-top: 80px;
+            text-decoration: underline;
+        }
         .spotlight_text{
             align-items: end;
             text-align: center;
-            margin-top: 150px;
+            margin-top: 90px;
             font-size: larger;
             line-height: 40px;
         }
@@ -77,6 +84,15 @@
         }
         .aboutme_header {
             padding: 10px;
+        }
+        @media screen and (max-width: 768px) {
+            .aboutme_fb {
+                flex-direction: column; /* Change direction to column for small screens */
+            }
+            .aboutme_text {
+                margin-left: 20px; /* Adjust margin for better spacing */
+                margin-right: 20px; /* Adjust margin for better spacing */
+            } 
         }
     </style>
 </head>
@@ -116,8 +132,6 @@
         </div>
     </div>
 
-        
-
     <div class="spotlight_boarder">
         <h2>Spotlight</h2>
         <div class="spotlight_fb">
@@ -125,13 +139,12 @@
                 <img class="spotlight_img" src="../project/projectimages/survivor.jpeg" width="822" height="550">
                 <figcaption>Survivor</figcaption>
             </div>
-            <div>
-                <p class="spotlight_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, ipsum pariatur expedita esse mollitia odit aperiam itaque, dolor laborum nesciunt iure fugit quia. Officia illum necessitatibus assumenda est vero voluptas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et magni doloremque, incidunt ipsa ab assumenda autem, quisquam eveniet quibusdam rem dolores alias veritatis sed quia facere natus velit. Similique, cum. </p>
+            <div class="spotlight_content">
+                <h2 class="spotlight_title">Survivor Season 45</h2>
+                <p class="spotlight_text">As survivor is one of my favorite shows its hard for me to not like a season. With that being said season 45 was not the survivor I grew up watching. While it ended strong with good players, the beggining was ROUGH to watch. In my opinion many of the people that first left the show were players that volentarily left because it was just too hard. Survivor is a once in a lifetime chance to get casted on, they shpuld'nt be casting people that leave becuase they miss their bed! I want the old, nitty-gritty, non new era type players back.</p>
             </div>
-    
         </div>
     </div>
-
 
     <div class="aboutme_boarder">
         <h1>About Mary</h1>
