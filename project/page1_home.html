@@ -79,14 +79,16 @@
         div, h1 {
             padding:15px;
         }
+
         .aboutme_paragraph {
             align-items:flex-start;
         }
+
         .aboutme_header {
             padding: 10px;
         }
         
-         @media screen and (max-width: 768px) {
+        @media screen and (max-width: 768px) {
             .aboutme_fb {
                 flex-direction: column; /* Change direction to column for small screens */
             }
@@ -94,12 +96,13 @@
                 margin-left: 10px; /* Adjusted margin for better spacing */
                 margin-right: 10px; /* Adjusted margin for better spacing */
             }
-            .spotlight_title {
-                font-size: 24px; /* Reduced font size for smaller screens */
+            .spotlight_img {
+                width: 250px; /* Adjusted width for smaller screens */
+                height: auto; /* Maintain aspect ratio */
             }
-            .spotlight_text {
-                font-size: 16px; /* Reduced font size for smaller screens */
-                line-height: 24px; /* Adjusted line height for smaller screens */
+            .aboutme_img {
+                width: 150px; /* Adjusted width for smaller screens */
+                height: auto; /* Maintain aspect ratio */
             }
         }
     </style>
