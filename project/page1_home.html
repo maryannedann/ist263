@@ -91,22 +91,18 @@
         @media screen and (max-width: 768px) {
             .aboutme_fb {
                 flex-direction: column; /* Change direction to column for small screens */
+                overflow-x: auto; /* Enable horizontal scrollbar */
+                overflow-y: hidden; /* Hide vertical scrollbar */
+                scrollbar-color: #990011 #FCF6F5; /* Set scrollbar color */
             }
             .aboutme_text {
                 margin-left: 10px; /* Adjusted margin for better spacing */
                 margin-right: 10px; /* Adjusted margin for better spacing */
-                overflow-y: auto;
             }
-            .spotlight_text {   
-                overflow-y: auto;
-            }
-            .spotlight_img {
-                width: 250px; /* Adjusted width for smaller screens */
-                height: auto; /* Maintain aspect ratio */
-            }
-            .aboutme_img {
-                width: 150px; /* Adjusted width for smaller screens */
-                height: auto; /* Maintain aspect ratio */
+            .spotlight_fb {
+                overflow-x: auto; /* Enable horizontal scrollbar */
+                overflow-y: hidden; /* Hide vertical scrollbar */
+                scrollbar-color: #990011 #FCF6F5; /* Set scrollbar color */
             }
         }
     </style>
