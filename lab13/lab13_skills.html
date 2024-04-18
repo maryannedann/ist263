@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lab</title>
+        <link rel="stylesheet" href="lab7.css">
+        <style>
+            table, th, td {border: 1px solid black}
+            .mainhead {text-align: center;}
+            .description {
+                margin: 10px;
+                text-align: center;}
+            img {width: 30px;} 
+            .flexbox1 {
+                display: flex;
+                flex:1;
+                justify-content: space-around;
+                align-items: center;
+                padding: 10px;
+                margin: 10px;
+            }
+            .flexbox2{
+                display:flex;
+                flex:3;
+                padding: 10px;
+                margin: 10px;
+            }
+            aside {
+                border-radius: 1em;   
+                background-color: #d3d3d3;
+                padding:50px;
+            }
+            .skip {
+                background-color: #333333;
+                color: #ffffff;
+                padding: 8px;
+                border: 1px solid black;
+                position: absolute;
+                top: 10px;
+                left: -999px;
+            }
+        .skip:focus {
+            left: 10px;
+            }    
+        </style>
+    </head>
+    <body>
+        <nav> 
+            <a href="index.html">Home</a><span class="separator">|</span>
+            <a href="lab7_skills.html">Skills</a><span class="separator">|</span>
+            <a href="lab7_contact.html">Contact</a>
+        </nav>
+        <header>
+        <h1 class="mainhead">Mary Daniel's Skills</h1>
+        <p class="description">As a new student in the Ischool at Syracuse University, this year I have been leanring the fundamentals of IT. My main focuses have been the skills listed below amongst other things.</p>
+        <br>
+        </header>
+        <a href="#section" class="skip" tabindex="1">Skip to Content</a><br>
+        <section id="section">
+            <div class="flexbox2">
+                <div class="flexbox1">   
+                    <div>
+                        <img src="../images/python.svg" alt="python symbol"><br>Python
+                    </div>
+
+                    <div>
+                        <img src="../images/code-solid.svg" alt="html symbol"><br>HTML
+                    </div>
+
+                    <div>
+                        <img src="../images/table-solid.svg"  alt="excel symbol"><br>Microsoft Excel
+                    </div>
+
+                    <div>
+                        <img src="../images/css3-alt.svg"  alt="css symbol"><br>CSS
+                    </div>
+
+                    <div>
+                        <img src="../images/brain-solid.svg"  alt="a brain"><br>Quick Learner
+                    </div>
+                </div>   
+        </section>
+        <div>
+            <aside>
+                <h2>Other Skills</h2>
+                <p>Powerpoint</p>
+                <p>Writing</p>
+                <p>Tennis</p>
+            </aside>
+        </div>
+        </div>
+
+        <form action="https://formspree.io/f/xoqgebkk" method="post">
+            <label for="email">Enter email:</label>
+            <input type="text" id="email" name="email">
+            <br>
+       
+        <p>Check the boxes that apply:</p>
+             <input type="checkbox" id="code" name="codingquestion" value="yes">
+             <label for="code"> I also like to code</label><br>
+             <input type="checkbox" id="tennis" name="tennisquestion" value="yes">
+             <label for="tennis"> I also like to play tennis</label><br>
+             <input type="checkbox" id="quicklearner" name="quicklearnerquestion" value="yes">
+             <label for="quicklearner"> I am a quick learner</label> <br>
+             <br>
+             <label for="questionsformary">Write any questions you have for Mary: </label><br>
+             <textarea id="questionsformary" name="questionsformary" rows="4" cols="50"></textarea>
+             <br>
+             <br>
+             <input type="submit" value="Submit">
+        </form>
+    </body>
+    </html>
