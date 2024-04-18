@@ -2,7 +2,7 @@ body {background-color: #faeae6}
 nav {background-color: #e3e1e2; 
         padding: 10px;
         margin-bottom: 30px;}
-nav a {color: #ed4e2b; }
+nav a {color: #3a3433; }
 nav a:hover{background-color: #e695c4}
 @media screen and (max-width: 768px) {
         nav {
