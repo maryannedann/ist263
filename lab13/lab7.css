@@ -2,8 +2,15 @@ body {background-color: #faeae6}
 nav {background-color: #e3e1e2; 
         padding: 10px;
         margin-bottom: 30px;}
-nav a {color: #3a3433; }
-nav a:hover{background-color: #e695c4}
+nav a {
+    color: blue;
+    text-decoration: none; }
+nav a:hover{
+    text-decoration: underline;
+}
+nav a:visited {
+    color: #884488;
+}
 @media screen and (max-width: 768px) {
         nav {
             display: block; 
