@@ -87,6 +87,26 @@
         .aboutme_header {
             padding: 10px;
         }
+
+        .footer_heading {
+            text-align: center;
+        }
+
+        .form_fb {
+            display: flex;
+        }
+        
+        .name_email {
+            flex: 1;
+            align-items: center;
+            margin-left: 150px;
+
+        }
+
+        .reccomendation {
+            flex: 1;
+            align-items: center;
+        }
         
         @media screen and (max-width: 768px) {
             .aboutme_fb {
@@ -98,13 +118,17 @@
             }
             .spotlight_img {
                 width: 250px; 
-                height: auto; 
+                height: auto;
             }
             .aboutme_img {
                 width: 150px; 
-                height: auto; 
+                height: auto;
+            }
+            .spotlight_fb {
+                flex-direction: column;
             }
         }
+
     </style>
 </head>
 
@@ -122,7 +146,7 @@
         <h2>Recent Reviews</h2>
         <div class="preview_fb">
             <div>
-                <img class="preview_imgs" src="../project/projectimages/lovehaswon.jpg" alt="tvshowstill" width="400" height="235">
+                <a href="lovehaswon_review.html"> <img class="preview_imgs" src="../project/projectimages/lovehaswon.jpg" alt="tvshowstill" width="400" height="235"> </a>
                 <figcaption>Love Has Won</figcaption>
             </div>
     
@@ -148,11 +172,11 @@
         <div class="spotlight_fb">
             <div>
                 <img class="spotlight_img" src="../project/projectimages/survivor.jpeg" alt="tvshowstill" width="822" height="550">
-                <figcaption>Survivor</figcaption>
+                <figcaption class="spotlight_img">Survivor</figcaption>
             </div>
             <div class="spotlight_content">
                 <h2 class="spotlight_title">Survivor Season 45</h2>
-                <p class="spotlight_text">As survivor is one of my favorite shows its hard for me to not like a season. With that being said season 45 was not the survivor I grew up watching. While it ended strong with good players, the beggining was ROUGH to watch. In my opinion many of the people that first left the show were players that volentarily left because it was just too hard. Survivor is a once in a lifetime chance to get casted on, they shpuld'nt be casting people that leave becuase they miss their bed! I want the old, nitty-gritty, non new era type players back.</p>
+                <p class="spotlight_text">As survivor is one of my favorite shows its hard for me to not like a season. With that being said season 45 was not the survivor I grew up watching. While it ended strong with good players, the beggining was ROUGH to watch. In my opinion many of the people that first left the show were players that volentarily left because it was just too hard. Survivor is a once in a lifetime chance to get casted on, they should'nt be casting people that leave just becuase they miss their bed! I want the old, nitty-gritty, non new era type players back.</p>
             </div>
         </div>
     </div>
@@ -174,15 +198,25 @@
    
    
 <footer>
-    <h1 class="footer_heading">Reccomend a movie or TV show for Mary to review!</h1>
+    <h1 class="footer_heading">Reccomend a Movie or TV Show for Mary to Review!</h1>
     <form action="https://formspree.io/f/xoqgebkk" method="post">
-        <label for="name">Name</label><br>
-        <input type="text" id="name" name="name"><br>
-        <label for="email">Email</label><br>
-        <input type="text" id="email" name="email"><br>
-        <label for ="comment">Reccomendation</label><br>
-        <textarea id="comment" name="comment"></textarea><br>
-        <input type="submit" class="submit" value="Submit">
+    <div class="form_fb">
+        <div class="name_email">
+            <label for="name">Name</label><br>
+            <input type="text" id="name" name="name" style="width: 500px; height: 40px;">
+            <br>
+            <br>
+            <br>
+            <label for="email" >Email</label><br>
+            <input type="text" id="email" name="email" style="width: 500px; height: 40px;"><br>
+        </div>
+        <div class="reccomendation">
+            <label for ="comment">Reccomendation</label><br>
+            <textarea id="comment" name="comment" rows="10" cols="80"></textarea><br>
+            <input type="submit" class="submit" value="Submit">
+        </div>
+    </div>
+        
     </form>
 </footer>
 
