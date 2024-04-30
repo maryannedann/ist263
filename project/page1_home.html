@@ -127,13 +127,24 @@
             .spotlight_fb {
                 flex-direction: column;
             }
+           
+            .form_fb {
+                flex-direction: column;
+
+            }
+            .form_tb {
+                width: 250px;
+                height: 30px;
+            }
         }
 
     </style>
 </head>
 
 <body>
-    <header>Eventual website logo will go here</header>
+    <header>
+
+    </header>
     <nav class="nav_links">
         <hr>
         <a href="page1_home.html" class="nav_link">HOME</a> 
@@ -151,12 +162,12 @@
             </div>
     
             <div>
-                <img class="preview_imgs" src="../project/projectimages/sopronos2.jpeg" alt="tvshowstill" width="400" height="235">
+                <img class="preview_imgs" src="../project/projectimages/sopranos2.jpeg" alt="tvshowstill" width="400" height="235">
                 <figcaption>The Sopranos</figcaption>
             </div>
     
             <div>
-                <img class="preview_imgs" src="../project/projectimages/uncutgems.jpg" alt="moviestill" width="400" height="235">
+                <img class="preview_imgs" src="../project/projectimages/uncutgems2.jpeg" alt="moviestill" width="400" height="235">
                 <figcaption>Uncut Gems</figcaption>
             </div>
     
@@ -203,16 +214,16 @@
     <div class="form_fb">
         <div class="name_email">
             <label for="name">Name</label><br>
-            <input type="text" id="name" name="name" style="width: 500px; height: 40px;">
+            <input type="text" id="name" name="name" style="width: 500px; height: 40px;" class="form_tb">
             <br>
             <br>
             <br>
             <label for="email" >Email</label><br>
-            <input type="text" id="email" name="email" style="width: 500px; height: 40px;"><br>
+            <input type="text" id="email" name="email" style="width: 500px; height: 40px;" class="form_tb"><br>
         </div>
         <div class="reccomendation">
             <label for ="comment">Reccomendation</label><br>
-            <textarea id="comment" name="comment" rows="10" cols="80"></textarea><br>
+            <textarea id="comment" name="comment" rows="10" cols="80" class="form_tb"></textarea><br>
             <input type="submit" class="submit" value="Submit">
         </div>
     </div>
