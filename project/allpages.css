@@ -26,9 +26,24 @@ header {
         background-color: #990011;
         padding: 150px;
     }
+.header_fb {
+    display: flex;
+    align-items: center;
+}
 .footer_heading{
         color: #FCF6F5; 
     }
 form, label {
         color: #FCF6F5;
     }
+.banner_img {
+    width: 1600px;
+    height: 500px; 
+}
+
+@media screen and (max-width: 768px) {
+    .banner_img {
+        width:300px;
+        height:100px
+    }
+}
