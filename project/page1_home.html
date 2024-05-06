@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
     <link rel="stylesheet" href="allpages.css">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="../project/projectimages/favicon.ico">
     <style>
         .preview_boarder {
             border-left: 2px solid black;
@@ -129,14 +129,6 @@
                 flex-direction: column;
             }
            
-            .form_fb {
-                flex-direction: column;
-
-            }
-            .form_tb {
-                width: 250px;
-                height: 30px;
-            }
         }
 
     </style>
@@ -160,22 +152,22 @@
         <h2>Recent Reviews</h2>
         <div class="preview_fb">
             <div>
-                <a href="lovehaswon_review.html"> <img class="preview_imgs" src="../project/projectimages/lovehaswon.jpg" alt="tvshowstill" width="400" height="235"> </a>
+                <a href="lovehaswon_review.html"> <img class="preview_imgs" src="../project/projectimages/lovehaswon.jpg" alt="tvshowstill" width="400" height="235"></a>
                 <figcaption>Love Has Won</figcaption>
             </div>
     
             <div>
-                <img class="preview_imgs" src="../project/projectimages/sopranos2.jpeg" alt="tvshowstill" width="400" height="235">
+                <a href="thesopranos_review.html"><img class="preview_imgs" src="../project/projectimages/sopranos2.jpeg" alt="tvshowstill" width="400" height="235"></a>
                 <figcaption>The Sopranos</figcaption>
             </div>
     
             <div>
-                <img class="preview_imgs" src="../project/projectimages/uncutgems2.jpeg" alt="moviestill" width="400" height="235">
+                <a href="uncutgems_reviews.html"><img class="preview_imgs" src="../project/projectimages/uncutgems2.jpeg" alt="moviestill" width="400" height="235"></a>
                 <figcaption>Uncut Gems</figcaption>
             </div>
     
             <div>
-                <img class="preview_imgs" src="../project/projectimages/whiplash2.jpeg" alt="moviestill"  width="400" height="235">
+                <a href="whiplash_reveiw.html"><img class="preview_imgs" src="../project/projectimages/whiplash2.jpeg" alt="moviestill"  width="400" height="235"></a>
                 <figcaption>Whiplash</figcaption>
             </div>
         </div>
@@ -217,12 +209,12 @@
     <div class="form_fb">
         <div class="name_email">
             <label for="name">Name</label><br>
-            <input type="text" id="name" name="name" style="width: 500px; height: 40px;" class="form_tb">
+            <textarea id="name" name="name" rows="3" cols="40" class="form_tb"></textarea>
             <br>
             <br>
             <br>
             <label for="email" >Email</label><br>
-            <input type="text" id="email" name="email" style="width: 500px; height: 40px;" class="form_tb"><br>
+            <textarea id="email" name="email" rows="3" cols="40" class="form_tb"></textarea><br>
         </div>
         <div class="reccomendation">
             <label for ="comment">Reccomendation</label><br>
@@ -233,7 +225,5 @@
         
     </form>
 </footer>
-
-
 </body>
 </html>

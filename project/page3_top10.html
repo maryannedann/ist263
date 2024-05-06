@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Top Ten</title>
     <link rel="stylesheet" href="allpages.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../project/projectimages/favicon.ico">
     <style>
-        h1 {
+        .topten {
             text-align: center;
             padding: 80px;
             font-size: 80px;
@@ -80,7 +81,7 @@
         <a href="page3_top10.html">TOP 10</a>
         <hr>
     </nav>
-    <h1>Top Ten</h1> 
+    <h1 class="topten">Top Ten</h1> 
 
     <div class="rank_fb"> 
         <div class="rank_item">
@@ -165,6 +166,26 @@
         
     </div>
 
-    
+    <footer>
+        <h1 class="footer_heading">Reccomend a Movie or TV Show for Mary to Review!</h1>
+        <form action="https://formspree.io/f/xoqgebkk" method="post">
+        <div class="form_fb">
+            <div class="name_email">
+                <label for="name">Name</label><br>
+                <textarea id="name" name="name" rows="3" cols="40" class="form_tb"></textarea>
+                <br>
+                <br>
+                <br>
+                <label for="email" >Email</label><br>
+                <textarea id="email" name="email" rows="3" cols="40" class="form_tb"></textarea><br>
+            </div>
+            <div class="reccomendation">
+                <label for ="comment">Reccomendation</label><br>
+                <textarea id="comment" name="comment" rows="10" cols="80" class="form_tb"></textarea><br>
+                <input type="submit" class="submit" value="Submit">
+            </div>
+        </div>
+        </form>
+    </footer>
 </body>
 </html>
