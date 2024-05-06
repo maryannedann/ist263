@@ -60,7 +60,7 @@ form, label {
     align-items: center;
 }
 
-.skip {
+#skip {
     background-color: #333333;
     color: #ffffff;
     padding: 8px;
@@ -69,7 +69,7 @@ form, label {
     top: 10px;
     left: -999px; 
 }
-.skip:focus {
+#skip:focus {
     left: 10px;
 }
 @media screen and (max-width: 768px) {
