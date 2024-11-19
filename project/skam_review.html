@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TV Show Review: Skam</title>
     <link rel="stylesheet" href="allpages.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../project/projectimages/favicon.ico">
     <style>
         img {
            display: block;
@@ -23,14 +24,34 @@
            font-size: 30px;
            line-height: 55px;
        }
+
+       @media screen and (max-width: 768px) {
+        .review_title {
+        font-size: 40px; 
+        padding: 30px; 
+        }
+
+        .review_text {
+        margin: 20px; 
+        font-size: 18px;
+        line-height: 28px; 
+        }
+
+        img {
+            width: 100%; 
+            max-width: 750px; 
+            height: auto;
+        }
+        }
    </style>
 </head>
 <body>
     <header>
-        <div class="header_fb">
-            <img src="../project/projectimages/logo2.png" class="banner_img"></img>
-        </div>
+        <img src="projectimages/logo2.png" alt="Banner Logo" id="desktop_logo">
+    
+        <img src="projectimages/smaller_logo.png" alt="Mobile Logo" id="mobile_logo">
     </header>
+    
     <nav class="nav_links">
         <hr>
         <a href="page1_home.html">HOME</a> 
@@ -54,5 +75,28 @@
             
             In the end, "Skam" is more than just a TV show; it's a cultural touchstone that has sparked important conversations and inspired audiences around the world. Whether you're a teenager grappling with the challenges of adolescence or an adult looking back on your own high school years, there's something in "Skam" that will resonate with you. So do yourself a favor and dive into this captivating series—you won't regret it.
         </div> 
+
+        <footer>
+            <h1 class="footer_heading">Reccomend a Movie or TV Show for Mary to Review!</h1>
+            <form action="https://formspree.io/f/xoqgebkk" method="post">
+            <div class="form_fb">
+                <div class="name_email">
+                    <label for="name">Name</label><br>
+                    <textarea id="name" name="name" rows="3" cols="40" class="form_tb"></textarea>
+                    <br>
+                    <br>
+                    <br>
+                    <label for="email" >Email</label><br>
+                    <textarea id="email" name="email" rows="3" cols="40" class="form_tb"></textarea><br>
+                </div>
+                <div class="reccomendation">
+                    <label for ="comment">Reccomendation</label><br>
+                    <textarea id="comment" name="comment" rows="10" cols="80" class="form_tb"></textarea><br>
+                    <input type="submit" class="submit" value="Submit">
+                </div>
+            </div>
+                
+            </form>
+        </footer>
 </body>
 </html>

@@ -23,13 +23,30 @@
         figcaption {
             text-align: center;
         }
-    
+
+        @media screen and (max-width: 768px) {
+        .review_row1, .review_row2, .review_row3 {
+            display: flex;
+            flex-direction: column; 
+            align-items: center;
+            margin-top: 20px;
+            margin-right: 35px;
+    }
+
+    .review_row1 img, .review_row2 img, .review_row3 img {
+        width: 350px;
+        height: auto; 
+    }
+        }
     </style>
 </head>
 <body>
     <header>
-        <img src="../project/projectimages/logo2.png" class="banner_img" alt="banner logo">
+        <img src="projectimages/logo2.png" alt="Banner Logo" id="desktop_logo">
+    
+        <img src="projectimages/smaller_logo.png" alt="Mobile Logo" id="mobile_logo">
     </header>
+
     <nav class="nav_links">
         <a href="#skip" class="skip" tabindex="1">Skip to Content</a><br>
         <hr>

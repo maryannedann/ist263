@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movie Review: Joker</title>
     <link rel="stylesheet" href="allpages.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../project/projectimages/favicon.ico">
     <style>
         img {
            display: block;
@@ -23,14 +24,34 @@
            font-size: 30px;
            line-height: 55px;
        }
+
+       @media screen and (max-width: 768px) {
+        .review_title {
+        font-size: 40px; 
+        padding: 30px; 
+        }
+
+        .review_text {
+        margin: 20px; 
+        font-size: 18px;
+        line-height: 28px; 
+        }
+
+        img {
+            width: 100%; 
+            max-width: 750px; 
+            height: auto;
+        }
+        }
     </style>
 </head>
 <body>
     <header>
-        <div class="header_fb">
-            <img src="../project/projectimages/logo2.png" class="banner_img"></img>
-        </div>
+        <img src="projectimages/logo2.png" alt="Banner Logo" id="desktop_logo">
+    
+        <img src="projectimages/smaller_logo.png" alt="Mobile Logo" id="mobile_logo">
     </header>
+    
     <nav class="nav_links">
         <hr>
         <a href="page1_home.html">HOME</a> 
@@ -47,5 +68,28 @@
             "Joker" isn't just another superhero movie; it's a chilling exploration of one of the most iconic villains in comic book history. Directed by Todd Phillips and starring Joaquin Phoenix in a transformative performance, this dark and gritty film offers a fresh and disturbing take on the origin story of the Clown Prince of Crime. Set in a grim and decaying Gotham City, "Joker" follows Arthur Fleck, a struggling comedian with a history of mental illness who descends into madness and becomes the infamous Clown Prince of Crime. Phoenix delivers a tour-de-force performance, capturing the character's descent into madness with a raw intensity that is both mesmerizing and unsettling.
             But what sets "Joker" apart is its willingness to delve into the psychological depths of its protagonist. Rather than presenting him as a one-dimensional villain, the film humanizes Arthur, exploring the societal factors and personal traumas that push him over the edge. In doing so, it raises important questions about mental health, social inequality, and the consequences of neglecting those in need. Visually stunning and thematically rich, "Joker" is a film that demands to be seen on the big screen. From its haunting score to its evocative cinematography, every aspect of the film is crafted with meticulous attention to detail. And while it may be a departure from the traditional superhero fare, it's ultimately a thought-provoking and unforgettable cinematic experience. Of course, "Joker" is not without controversy. Some have criticized its portrayal of violence and its depiction of mental illness, while others have praised its boldness and originality. But love it or hate it, there's no denying the impact that "Joker" has had on audiences and the conversation it has sparked about the nature of heroism, villainy, and the blurred lines between them. In the end, "Joker" is a film that leaves a lasting impression. Whether you're a fan of comic book movies or simply a lover of great cinema, it's a must-see that will stay with you long after the credits roll. So grab your popcorn, brace yourself for a wild ride, and prepare to be blown away by the brilliance of "Joker."
         </div> 
+
+        <footer>
+            <h1 class="footer_heading">Reccomend a Movie or TV Show for Mary to Review!</h1>
+            <form action="https://formspree.io/f/xoqgebkk" method="post">
+            <div class="form_fb">
+                <div class="name_email">
+                    <label for="name">Name</label><br>
+                    <textarea id="name" name="name" rows="3" cols="40" class="form_tb"></textarea>
+                    <br>
+                    <br>
+                    <br>
+                    <label for="email" >Email</label><br>
+                    <textarea id="email" name="email" rows="3" cols="40" class="form_tb"></textarea><br>
+                </div>
+                <div class="reccomendation">
+                    <label for ="comment">Reccomendation</label><br>
+                    <textarea id="comment" name="comment" rows="10" cols="80" class="form_tb"></textarea><br>
+                    <input type="submit" class="submit" value="Submit">
+                </div>
+            </div>
+                
+            </form>
+        </footer>
 </body>
 </html>

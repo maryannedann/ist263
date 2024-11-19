@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tv show review: Freeks and Geeks</title>
     <link rel="stylesheet" href="allpages.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../project/projectimages/favicon.ico">
     <style>
          img {
             display: block;
@@ -23,13 +24,32 @@
             font-size: 30px;
             line-height: 55px;
         }
+
+        @media screen and (max-width: 768px) {
+        .review_title {
+        font-size: 40px; 
+        padding: 30px; 
+        }
+
+        .review_text {
+        margin: 20px; 
+        font-size: 18px;
+        line-height: 28px; 
+        }
+
+        img {
+            width: 100%; 
+            max-width: 750px; 
+            height: auto;
+        }
+        }
     </style>
 </head>
 <body>
     <header>
-        <div class="header_fb">
-            <img src="../project/projectimages/logo2.png" class="banner_img"></img>
-        </div>
+        <img src="projectimages/logo2.png" alt="Banner Logo" id="desktop_logo">
+    
+        <img src="projectimages/smaller_logo.png" alt="Mobile Logo" id="mobile_logo">
     </header>
     <nav class="nav_links">
         <hr>
@@ -46,5 +66,28 @@
         <div class="review_text">
             Freeks and Geeks is an amazing TV show that was cut way to short. In only one season this show covered a lot of ground, and had the potential for so much more. So many actors got their start on this show like James Franco, Seth Rogen, and Jason Segel, Busy Phillips, Linda Cardellini, and directed by Judd Aptow, must I go on. Set in the early 1980s, this cult classic series follows a group of misfit teenagers as they navigate the ups and downs of adolescence at William McKinley High School. On one side, you have the "freaks"—a ragtag group of rebellious outsiders who march to the beat of their own drum. On the other side, you have the "geeks"—a lovable band of social outcasts who struggle to find their place in the social hierarchy. What sets "Freaks and Geeks" apart is its authenticity. From the fashion to the music to the slang, everything about the show feels like a time capsule from the '80s. But it's the characters that truly steal the show.
         </div> 
+
+        <footer>
+            <h1 class="footer_heading">Reccomend a Movie or TV Show for Mary to Review!</h1>
+            <form action="https://formspree.io/f/xoqgebkk" method="post">
+            <div class="form_fb">
+                <div class="name_email">
+                    <label for="name">Name</label><br>
+                    <textarea id="name" name="name" rows="3" cols="40" class="form_tb"></textarea>
+                    <br>
+                    <br>
+                    <br>
+                    <label for="email" >Email</label><br>
+                    <textarea id="email" name="email" rows="3" cols="40" class="form_tb"></textarea><br>
+                </div>
+                <div class="reccomendation">
+                    <label for ="comment">Reccomendation</label><br>
+                    <textarea id="comment" name="comment" rows="10" cols="80" class="form_tb"></textarea><br>
+                    <input type="submit" class="submit" value="Submit">
+                </div>
+            </div>
+                
+            </form>
+        </footer>
 </body>
 </html>

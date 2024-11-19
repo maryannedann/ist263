@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movie Review: Whiplash</title>
+    <link rel="stylesheet" href="allpages.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../project/projectimages/favicon.ico">
     <style>
         img {
            display: block;
@@ -22,14 +24,34 @@
            font-size: 30px;
            line-height: 55px;
        }
+
+       @media screen and (max-width: 768px) {
+        .review_title {
+        font-size: 40px; 
+        padding: 30px; 
+        }
+
+        .review_text {
+        margin: 20px; 
+        font-size: 18px;
+        line-height: 28px; 
+        }
+
+        img {
+            width: 100%; 
+            max-width: 750px; 
+            height: auto;
+        }
+       }
    </style>
 </head>
 <body>
     <header>
-        <div class="header_fb">
-            <img src="../project/projectimages/logo2.png" class="banner_img"></img>
-        </div>
+        <img src="projectimages/logo2.png" alt="Banner Logo" id="desktop_logo">
+    
+        <img src="projectimages/smaller_logo.png" alt="Mobile Logo" id="mobile_logo">
     </header>
+
     <nav class="nav_links">
         <hr>
         <a href="page1_home.html">HOME</a> 
@@ -46,5 +68,28 @@
             
             "Whiplash" is a cinematic adrenaline shot straight to the heart, a ferocious exploration of ambition, obsession, and the tumultuous journey towards greatness. In this gripping tale, we meet Andrew Neiman (Miles Teller), a young and fiercely determined jazz drummer who dreams of making it big. His path to success, however, takes a sharp turn when he encounters Terence Fletcher (J.K. Simmons), a music instructor whose methods are as brutal as they are effective. Director Damien Chazelle takes us on a rollercoaster ride of emotions, punctuated by thunderous drumbeats and moments of spine-tingling tension. The film's pacing is relentless, mirroring the relentless pursuit of perfection that drives both Neiman and Fletcher to the brink of madness. Miles Teller delivers a powerhouse performance as Neiman, capturing the character's drive and vulnerability with equal finesse. His transformation from eager novice to driven prodigy is nothing short of mesmerizing, drawing viewers deeper into the gripping narrative But it's J.K. Simmons who truly steals the show with his portrayal of Fletcher. Simmons is a force of nature, commanding the screen with his presence and imbuing his character with a chilling mix of charisma and cruelty. Fletcher's verbal tirades and psychological manipulation keep audiences on the edge of their seats, wondering just how far he'll push his students in the name of greatness. At its core, "Whiplash" is a gripping psychological drama that asks tough questions about the nature of ambition and the sacrifices we're willing to make to achieve our dreams. It's a film that lingers long after the credits roll, leaving viewers breathless and haunted by its electrifying intensity. With its electrifying performances, pulsating soundtrack, and uncompromising vision, "Whiplash" is a cinematic tour de force that demands to be seen and experienced. Strap yourself in for a wild ride, because this is one film that will leave you reeling.
         </div> 
+
+        <footer>
+            <h1 class="footer_heading">Reccomend a Movie or TV Show for Mary to Review!</h1>
+            <form action="https://formspree.io/f/xoqgebkk" method="post">
+            <div class="form_fb">
+                <div class="name_email">
+                    <label for="name">Name</label><br>
+                    <textarea id="name" name="name" rows="3" cols="40" class="form_tb"></textarea>
+                    <br>
+                    <br>
+                    <br>
+                    <label for="email" >Email</label><br>
+                    <textarea id="email" name="email" rows="3" cols="40" class="form_tb"></textarea><br>
+                </div>
+                <div class="reccomendation">
+                    <label for ="comment">Reccomendation</label><br>
+                    <textarea id="comment" name="comment" rows="10" cols="80" class="form_tb"></textarea><br>
+                    <input type="submit" class="submit" value="Submit">
+                </div>
+            </div>
+                
+            </form>
+        </footer>
 </body>
 </html>
