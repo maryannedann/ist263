@@ -103,24 +103,64 @@
         }
         
         @media screen and (max-width: 768px) {
-            .aboutme_fb {
-                flex-direction: column; 
-            }
-            .aboutme_text {
-                margin-left: 10px; 
-                margin-right: 10px; 
-            }
-            .spotlight_img {
-                width: 250px; 
-                height: auto;
-            }
-            .aboutme_img {
-                width: 150px; 
-                height: auto;
-            }
-            .spotlight_fb {
-                flex-direction: column;
-            }
+        .aboutme_fb {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .aboutme_text {
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-top: 20px;
+            line-height: 1.6;
+        }
+
+        .aboutme_img {
+            width: 150px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .spotlight_fb {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .spotlight_img {
+            width: 250px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .preview_imgs {
+            width: 300px;
+            height: 200px;
+            padding: 0;
+            margin: 0 auto;
+            display: block;
+        }
+
+        header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+}
+
+        #mobile_logo {
+            display: block;
+            margin: 0 auto;
+            max-width: 180px;
+            height: auto;
+        }
+
+        #desktop_logo {
+            display: none;
+        }
            
         }
 
@@ -144,10 +184,10 @@
     </nav>
 
     <div class="preview_boarder">
-        <h2 id="skip">Recent Reviews</h2>
+        <h2 id="skip">Recent Uploads</h2>
         <div class="preview_fb">
             <div>
-                <a href="lovehaswon_review.html"> <img class="preview_imgs" src="../project/projectimages/lovehaswon.jpg" alt="tvshowstill" width="400" height="235"></a>
+                <a href=""> <img class="preview_imgs" src="../project/projectimages/lovehaswon.jpg" alt="tvshowstill" width="400" height="235"></a>
                 <figcaption>Love Has Won</figcaption>
             </div>
     
@@ -173,7 +213,6 @@
         <div class="spotlight_fb">
             <div>
                 <img class="spotlight_img" src="../project/projectimages/survivor.jpeg" alt="tvshowstill" width="822" height="550">
-                <figcaption class="spotlight_img">Survivor</figcaption>
             </div>
             <div class="spotlight_content">
                 <h2 class="spotlight_title">Survivor Season 45</h2>
